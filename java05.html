@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap the first and last elements of a given array of integers</title>
+</head>
+<body>
+    
+
+    
+  <label>Enter a array Swap the first and last elements of a given array of integers</label>
+  <input type="text" id="txt">
+
+
+  <button class="btn">Click Me</button>
+ 
+
+  
+  <p class="input"></p>
+
+  <p class="output"></p>
+
+
+  <script>
+
+
+
+    let btnClick = document.querySelector('.btn');
+    btnClick.addEventListener('click', swapArray);
+    function swapArray() {
+      let str = document.getElementById('txt').value;
+      let array = str.split(' ');
+      console.log(array)
+      let newArray = [];
+      for (let i of array) {
+        newArray.push(i);
+
+      }
+
+     // Array = ['mango', 'orange', 'banana','apple'];
+
+     document.querySelector('.input').innerHTML = "input of array = " +newArray;
+    
+        
+       [newArray[0], newArray[newArray.length - 1]] = [newArray[newArray.length - 1], newArray[0]];
+
+ 
+        document.querySelector('.output').innerHTML = "output of array = " +newArray;
+      
+    }
+    
+       
+       
+
+
+   
+
+
+
+  
+   
+
+
+
+
+
+  
+    
+
+  
+
+
+
+  </script>
+
+</body>
+</html>
