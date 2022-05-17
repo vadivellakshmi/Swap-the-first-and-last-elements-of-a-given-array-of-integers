@@ -31,7 +31,7 @@
     btnClick.addEventListener('click', swapArray);
     function swapArray() {
       let str = document.getElementById('txt').value;
-      let array = str.split(' ');
+      let array = str.trim().split(' ');
       console.log(array)
       let newArray = [];
       for (let i of array) {
